@@ -29,11 +29,15 @@ module.exports = {
     // "warn" -> 1 开启警告规则
     //"error" -> 2 开启错误规则
     // 了解了上面这些，下面这些代码相信也看的明白了
+
+    //https://segmentfault.com/a/1190000006194584    常用的解释在这里
+
     'rules': {
         // allow paren-less arrow functions
         'arrow-parens': 0,
         // allow async-await
         'generator-star-spacing': 0,
-        "no-unused-vars":['warn'],
+        "no-unused-vars":['warn'],//定义的变量没有使用规定为警告
+        'no-extra-semi':'error',//多加一个分号规定为错误
     }
 };

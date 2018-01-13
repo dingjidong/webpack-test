@@ -70,19 +70,60 @@
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_css__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__common_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style1_css__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style1_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style1_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__style2_css__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__style2_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__style2_css__);
 
-document.body.appendChild(Object(__WEBPACK_IMPORTED_MODULE_0__component__["a" /* default */])());
+
+
+
+
+document.body.appendChild(Object(__WEBPACK_IMPORTED_MODULE_0__component__["a" /* default */])('11111',__WEBPACK_IMPORTED_MODULE_2__style1_css___default.a.class1,__WEBPACK_IMPORTED_MODULE_3__style2_css___default.a.class1));
+const h1 = document.createElement("h1");
+h1.innerText = __WEBPACK_IMPORTED_MODULE_2__style1_css___default.a.abc;
+document.body.appendChild(h1);
 
 /***/ }),
 /* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony default export */ __webpack_exports__["a"] = ((text="hello word text222999") => {
+/* harmony default export */ __webpack_exports__["a"] = ((text,s1,s2) => {
    const ele = document.createElement("div");
    ele.innerHTML = text;
+   ele.className = s1;
+
+   const p = document.createElement("p");
+   p.innerHTML = "8888888888";
+   p.className = s2;
+
+   ele.appendChild(p);
+   //let a = 0;
    return ele;
 });
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"abc":"_3g4Cn6TtpxD6nQn9LcQ_2t","class1":"_1VavQ8XV5dTiHHtzmuGg98"};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"class1":"_17bbsL34hp10_Rg58KIaU-"};
 
 /***/ })
 /******/ ]);
